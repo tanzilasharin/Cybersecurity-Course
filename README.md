@@ -27,7 +27,7 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 
-- By routing the traffic among the servers, a load balancer will make sure that there won't be a single point of application failure.
+- By routing the traffic among the servers, a load balancer will make sure that there will not be a single point of application failure.
 - A jump box is a secure, hardened virtual machines that is used to access and manage other devices in a separate security zone.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the system configuration.
@@ -67,16 +67,14 @@ A summary of the access policies in place can be found in the table below.
 
 ### ELK Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-
-- The main advantage of automating configuration with Ansible is that we can use it to configure resources across multiple machines from a single platform.
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because we can use it to configure resources across multiple machines from a single platform.
 
 The playbook implements the following tasks:
 
 - Installs Docker
 - Installs Pip
 - Installs the Docker Python module
-- Increases the virtual memoery of the system
+- Increases the virtual memory of the system
 - Downloads and launches a Docker ELK container
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
